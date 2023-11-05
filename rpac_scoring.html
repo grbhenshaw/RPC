@@ -1,0 +1,37 @@
+
+<html>
+<head>
+    <title>RPAC Scoring</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Individual Event Scoring</h2>
+    <table id="scoringTable">
+        <thead>
+            <tr>
+                <th>STAGE</th>
+                {event_headers}
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows for each individual will be added via JS -->
+        </tbody>
+    </table>
+    <br>
+    <button onclick="addRow()">Add Participant</button>
+    <script>
+        {js_script}
+    </script>
+</body>
+</html>
